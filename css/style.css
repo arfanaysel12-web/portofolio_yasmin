@@ -1166,9 +1166,9 @@ html[data-theme="dark"] .icon-moon { display: none; }
 }
 
 .exp-badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-left: auto;
   font-family: var(--font-head);
   font-size: 0.72rem;
   font-weight: 700;
@@ -1176,6 +1176,7 @@ html[data-theme="dark"] .icon-moon { display: none; }
   background: var(--clr-primary-tint);
   padding: 5px 12px;
   border-radius: var(--radius-pill);
+  white-space: nowrap;
 }
 
 .exp-card-head {
@@ -1194,11 +1195,23 @@ html[data-theme="dark"] .icon-moon { display: none; }
   background: var(--clr-accent-tint);
   color: var(--clr-accent);
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.exp-icon-img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
 }
 
 .exp-icon svg {
   width: 22px;
   height: 22px;
+}
+
+.exp-head-text {
+  min-width: 0;
+  flex: 1;
 }
 
 .exp-card-head h3 {
