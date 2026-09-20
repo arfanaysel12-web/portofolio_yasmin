@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3edff"/>
+      <stop offset="100%" stop-color="#ffe4f1"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <circle cx="70" cy="80" r="46" fill="#ffffff" opacity="0.5"/>
+  <circle cx="340" cy="430" r="70" fill="#ffffff" opacity="0.4"/>
+
+  <!-- Sparkles -->
+  <path d="M310 70l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#a78bfa" opacity="0.5"/>
+  <path d="M80 400l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#f472b6" opacity="0.5"/>
+
+  <!-- Standing illustration -->
+  <text x="200" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#8b5cf6" letter-spacing="2">ABOUT ME</text>
+
+  <!-- Body -->
+  <path d="M170 470v-90c0-22 13-36 30-36s30 14 30 36v90z" fill="url(#g2)" opacity="0.8"/>
+  <rect x="172" y="232" width="56" height="40" rx="16" fill="#f8cdc8"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="196" rx="82" ry="86" fill="#ffe3dd"/>
+
+  <!-- Hair -->
+  <path d="M200 108c-48 0-80 38-80 86 0 26 10 46 28 60l10-24h84l10 24c18-14 28-34 28-60 0-48-32-86-80-86z" fill="#5b3a29"/>
+  <path d="M160 210c6-40 22-66 40-66 22 0 38 26 40 66-4-34-2-40-6-44-8 6-14 12-18 30l-10 24h-72z" fill="#4a2e1f"/>
+
+  <!-- Face -->
+  <circle cx="172" cy="206" r="7" fill="#775745"/>
+  <circle cx="228" cy="206" r="7" fill="#775745"/>
+  <circle cx="172" cy="206" r="3" fill="#ffffff"/>
+  <circle cx="228" cy="206" r="3" fill="#ffffff"/>
+  <path d="M182 230q18 16 36 0" fill="none" stroke="#c96a63" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="154" cy="222" r="11" fill="#ffb3c1" opacity="0.5"/>
+  <circle cx="246" cy="222" r="11" fill="#ffb3c1" opacity="0.5"/>
+
+  <!-- Hearts -->
+  <path d="M330 250c0-8 6-12 10-12s10 4 10 12c0 10-10 18-10 18s-10-8-10-18z" fill="#ec4899"/>
+  <path d="M52 270c0-6 4-9 7-9s7 3 7 9c0 7-7 13-7 13s-7-6-7-13z" fill="#a78bfa"/>
+
+  <!-- Desk/plant decoration -->
+  <g transform="translate(96 300)">
+    <rect x="0" y="40" width="80" height="10" rx="5" fill="#c4b5fd" opacity="0.7"/>
+    <path d="M40 40V20c0-10 10-10 10 0 0-12 10-12 10 0s10 0 10 10 0 12 6 12z" fill="#34d399"/>
+  </g>
+
+  <!-- Sparkle dots -->
+  <circle cx="60" cy="180" r="4" fill="#f472b6" opacity="0.6"/>
+  <circle cx="340" cy="180" r="4" fill="#a78bfa" opacity="0.6"/>
+</svg>

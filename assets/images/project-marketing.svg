@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf2f8"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" fill="url(#bg)"/>
+  <rect x="16" y="16" width="448" height="268" rx="14" fill="#ffffff" opacity="0.55" stroke="#ffffff" stroke-width="2"/>
+  <text x="240" y="80" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#8b5cf6" letter-spacing="2">MARKETING TEAM</text>
+
+  <!-- Growing chart -->
+  <line x1="120" y1="232" x2="360" y2="232" stroke="#c4b5fd" stroke-width="3" stroke-linecap="round"/>
+  <line x1="140" y1="232" x2="140" y2="204" stroke="#f9a8d4" stroke-width="12" stroke-linecap="round"/>
+  <line x1="190" y1="232" x2="190" y2="176" stroke="#a78bfa" stroke-width="12" stroke-linecap="round"/>
+  <line x1="240" y1="232" x2="240" y2="148" stroke="#f472b6" stroke-width="12" stroke-linecap="round"/>
+  <line x1="290" y1="232" x2="290" y2="166" stroke="#8b5cf6" stroke-width="12" stroke-linecap="round"/>
+  <line x1="340" y1="232" x2="340" y2="148" stroke="#ec4899" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Up arrow -->
+  <path d="M250 108l26 26M276 108v26h-26" stroke="#22c55e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="276" cy="134" r="5" fill="#22c55e"/>
+
+  <!-- Team dots -->
+  <circle cx="140" cy="192" r="5" fill="#f9a8d4"/>
+  <circle cx="190" cy="164" r="5" fill="#a78bfa"/>
+  <circle cx="240" cy="136" r="5" fill="#f472b6"/>
+  <circle cx="290" cy="154" r="5" fill="#8b5cf6"/>
+  <circle cx="340" cy="136" r="5" fill="#ec4899"/>
+
+  <text x="240" y="270" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ec4899">Marketing &amp; Teamwork</text>
+  <rect x="92" y="238" width="120" height="10" rx="5" fill="#c4b5fd" opacity="0.7"/>
+  <rect x="268" y="238" width="120" height="10" rx="5" fill="#f9a8d4" opacity="0.7"/>
+</svg>
