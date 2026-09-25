@@ -1087,7 +1087,9 @@ html[data-theme="dark"] .icon-moon { display: none; }
    ============================================================ */
 .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 860px;
+  margin-inline: auto;
   gap: 22px;
 }
 
@@ -1106,6 +1108,19 @@ html[data-theme="dark"] .icon-moon { display: none; }
 .cert-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-md);
+}
+
+.cert-image {
+  width: 100%;
+  aspect-ratio: 1080 / 762;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.cert-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .cert-icon {
