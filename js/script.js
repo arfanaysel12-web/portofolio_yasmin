@@ -17,6 +17,9 @@
   const navbar = $('#navbar');
   const sections = $$('section[id]');
   const navLinks = $$('.nav-link');
+  const moreToggle = $('.nav-more-toggle');
+  const submenu = $('#nav-submenu');
+  const submenuLinks = submenu ? $$('.nav-link', submenu) : [];
 
   function updateNavbar() {
     navbar.classList.toggle('scrolled', window.scrollY > 30);
@@ -37,8 +40,41 @@
       link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
     });
 
+    if (moreToggle) {
+      moreToggle.classList.toggle(
+        'active',
+        submenuLinks.some((l) => l.getAttribute('href') === `#${currentId}`)
+      );
+    }
+
     updateBackToTop();
   }
+
+  /* ============================================================
+     "More" dropdown in navbar
+     ============================================================ */
+  function closeSubmenu() {
+    if (!moreToggle || !submenu) return;
+    moreToggle.setAttribute('aria-expanded', 'false');
+    submenu.classList.remove('open');
+  }
+
+  if (moreToggle && submenu) {
+    moreToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = moreToggle.getAttribute('aria-expanded') === 'true';
+      moreToggle.setAttribute('aria-expanded', String(!isOpen));
+      submenu.classList.toggle('open', !isOpen);
+    });
+
+    submenu.addEventListener('click', (e) => e.stopPropagation());
+  }
+
+  document.addEventListener('click', closeSubmenu);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSubmenu();
+  });
 
   /* ============================================================
      Mobile hamburger menu
@@ -50,6 +86,7 @@
     hamburger.classList.remove('active');
     navMenu.classList.remove('open');
     document.body.style.overflow = '';
+    closeSubmenu();
   }
 
   hamburger.addEventListener('click', (e) => {
@@ -108,10 +145,13 @@
   revealEls.forEach((el) => io.observe(el));
 
   /* Stagger reveal inside grids for nicer entrance */
-  $$('.skills-grid .reveal, .projects-grid .reveal, .achievements-grid .reveal, .exp-grid .reveal, .timeline .reveal')
-    .forEach((el, index) => {
-      el.style.transitionDelay = `${(index % 3) * 90}ms`;
-    });
+  $$(
+    '.skills-grid .reveal, .projects-grid .reveal, .achievements-grid .reveal, .exp-grid .reveal, ' +
+      '.timeline .reveal, .art-grid .reveal, .gallery-grid .reveal, .testimonials-grid .reveal, ' +
+      '.soft-grid .reveal'
+  ).forEach((el, index) => {
+    el.style.transitionDelay = `${(index % 3) * 90}ms`;
+  });
 
   /* Fallback: if IntersectionObserver is unavailable, show everything */
   if (typeof IntersectionObserver === 'undefined') {

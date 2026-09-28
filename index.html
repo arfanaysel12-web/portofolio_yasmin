@@ -43,6 +43,23 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item has-submenu">
+          <button type="button" class="nav-more-toggle" aria-expanded="false" aria-controls="nav-submenu">
+            More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <ul class="nav-submenu" id="nav-submenu">
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#art-design" class="nav-link">Art &amp; Design</a></li>
+            <li><a href="#currently-learning" class="nav-link">Currently Learning</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+            <li><a href="#tools" class="nav-link">Tools I Use</a></li>
+            <li><a href="#interests" class="nav-link">Interests</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          </ul>
+        </li>
       </ul>
 
       <div class="nav-actions">
@@ -373,14 +390,45 @@
 
           <article class="project-card reveal">
             <div class="project-thumb">
-              <img src="assets/images/project-web.svg" alt="Thumbnail Web Development L'Oreal Cantik" />
+              <img src="assets/images/project-web.svg" alt="Thumbnail L'Oreal Cantik" />
               <span class="project-tag">Web Development</span>
             </div>
             <div class="project-body">
-              <h3>Web Development</h3>
-              <p>Mengembangkan website toko kecantikan e-commerce &ldquo;L&rsquo;oreal Cantik&rdquo; menggunakan HTML, CSS, dan JavaScript.</p>
+              <h3>L'Oreal Cantik</h3>
+              <p>Website produk kecantikan / e-commerce L'Oreal Cantik.</p>
               <ul class="project-tech">
                 <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <a href="#" class="btn btn-sm btn-outline" onclick="preventLink(event)">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-placeholder" role="img" aria-label="Placeholder thumbnail Kasirku">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M7 13h4M7 17h7"/><circle cx="17" cy="14" r="2.5"/></svg>
+              <span>Kasirku</span>
+              <span class="project-tag">Web Application</span>
+            </div>
+            <div class="project-body">
+              <h3>Kasirku</h3>
+              <p>Membuat website aplikasi kasir untuk membantu pengelolaan transaksi dan penjualan.</p>
+              <ul class="project-tech">
+                <li>Web App</li><li>Transaksi</li><li>Penjualan</li>
+              </ul>
+              <a href="#" class="btn btn-sm btn-outline" onclick="preventLink(event)">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project-business.svg" alt="Thumbnail Product Design dan Branding Mousetopia" />
+              <span class="project-tag">Product Design / Branding</span>
+            </div>
+            <div class="project-body">
+              <h3>Mousetopia</h3>
+              <p>Merancang konsep produk dan branding Mousetopia sebagai bagian dari project bisnis sekolah.</p>
+              <ul class="project-tech">
+                <li>Product Design</li><li>Branding</li><li>Canva</li>
               </ul>
               <a href="#" class="btn btn-sm btn-outline" onclick="preventLink(event)">View Project</a>
             </div>
@@ -411,21 +459,6 @@
               <p>Mendesain produk seperti botol, tumbler, dan parfum menggunakan Adobe Illustrator.</p>
               <ul class="project-tech">
                 <li>Adobe Illustrator</li>
-              </ul>
-              <a href="#" class="btn btn-sm btn-outline" onclick="preventLink(event)">View Project</a>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-thumb">
-              <img src="assets/images/project-business.svg" alt="Thumbnail Business Project Mousetopia" />
-              <span class="project-tag">Business</span>
-            </div>
-            <div class="project-body">
-              <h3>Business Project</h3>
-              <p>Merancang konsep bisnis dan brand &ldquo;Mousetopia&rdquo; dalam proyek PKK, mengelola kebutuhan material, menyiapkan produk menarik, dan siap dipresentasikan.</p>
-              <ul class="project-tech">
-                <li>Google Docs</li><li>Canva</li>
               </ul>
               <a href="#" class="btn btn-sm btn-outline" onclick="preventLink(event)">View Project</a>
             </div>
@@ -480,7 +513,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
             </div>
             <div class="timeline-content">
-              <span class="timeline-year">2024 — 2027</span>
+              <span class="timeline-year">2024 - 2027</span>
               <h3>SMK Jakarta Pusat 1</h3>
               <p class="timeline-major">Rekayasa Perangkat Lunak (RPL)</p>
               <ul class="timeline-list">
@@ -490,6 +523,96 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="art-design">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Visual work</span>
+          <h2 class="section-title">Art &amp; <span class="accent">Design</span></h2>
+          <p class="section-sub">Ruang untuk karya visual yang akan ditambahkan kemudian.</p>
+        </div>
+
+        <div class="art-grid">
+          <article class="art-card reveal" data-art-slot="art-1">
+            <div class="art-placeholder" aria-label="Placeholder karya Art and Design 1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              <span>Karya 01</span>
+              <small>Gambar akan ditambahkan</small>
+            </div>
+          </article>
+
+          <article class="art-card reveal" data-art-slot="art-2">
+            <div class="art-placeholder" aria-label="Placeholder karya Art and Design 2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 0 0 0 20 2 2 0 0 0 2-2 2 2 0 0 0-2-2h-1a2 2 0 0 1 0-4h3a8 8 0 0 0 0-16z"/></svg>
+              <span>Karya 02</span>
+              <small>Gambar akan ditambahkan</small>
+            </div>
+          </article>
+
+          <article class="art-card reveal" data-art-slot="art-3">
+            <div class="art-placeholder" aria-label="Placeholder karya Art and Design 3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Karya 03</span>
+              <small>Gambar akan ditambahkan</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="currently-learning">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">&#127793; Currently Learning</span>
+          <h2 class="section-title">Things I&#39;m <span class="accent">Learning</span></h2>
+          <p class="section-sub">Ilmu yang sedang kupelajari untuk terus berkembang.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+            <h3>Web Development</h3>
+            <span class="learning-tag">Sedang dipelajari</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>
+            <h3>UI/UX Design</h3>
+            <span class="learning-tag">Sedang dipelajari</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+            <h3>JavaScript</h3>
+            <span class="learning-tag">Sedang dipelajari</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            <h3>PHP</h3>
+            <span class="learning-tag">Sedang dipelajari</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg></span>
+            <h3>Database / MySQL</h3>
+            <span class="learning-tag">Sedang dipelajari</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>
+            <h3>Graphic Design</h3>
+            <span class="learning-tag">Sedang dipelajari</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+            <h3>Pengembangan project digital</h3>
+            <span class="learning-tag">Sedang dipelajari</span>
+          </div>
         </div>
       </div>
     </section>
@@ -515,6 +638,16 @@
             </div>
           </article>
 
+          <article class="cert-card reveal">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg>
+            </div>
+            <div class="cert-body">
+              <h3>Juara 2 Lomba Karate</h3>
+              <p class="cert-org">Kategori Kata</p>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -536,17 +669,174 @@
               </span>
               <div class="exp-head-text">
                 <h3>OSIS SMK Jakarta Pusat 1</h3>
-                <span class="exp-meta">Ketua Divisi Marketing · 2024 — 2026</span>
+                <span class="exp-meta">Ketua Divisi Marketing · 2025 - 2026</span>
               </div>
               <span class="exp-badge">Organisasi</span>
             </div>
             <ul class="exp-list">
-              <li>Mengelola kegiatan dan strategi marketing dalam berbagai program OSIS.</li>
+              <li>Menjadi Ketua Divisi Marketing OSIS.</li>
+              <li>Mengelola kegiatan dan strategi marketing dalam program OSIS.</li>
               <li>Berkoordinasi dengan anggota dalam perencanaan dan pelaksanaan kegiatan.</li>
-              <li>Membantu mengembangkan ide promosi serta meningkatkan kerja sama tim.</li>
+              <li>Mengembangkan ide promosi dan membantu meningkatkan kerja sama tim.</li>
             </ul>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="volunteer">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">In the community</span>
+          <h2 class="section-title">Volunteer &amp; <span class="accent">Kepanitiaan</span></h2>
+          <p class="section-sub">Pengalaman membantu kegiatan sekolah dan organisasi.</p>
+        </div>
+
+        <div class="exp-grid">
+          <article class="exp-card reveal">
+            <div class="exp-card-head">
+              <span class="exp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <div class="exp-head-text">
+                <h3>Kepanitiaan Kegiatan OSIS</h3>
+                <span class="exp-meta">Kegiatan OSIS</span>
+              </div>
+              <span class="exp-badge">Kepanitiaan</span>
+            </div>
+            <p>Berparticipasi dalam berbagai kegiatan dan membantu proses persiapan serta pelaksanaan acara OSIS.</p>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-card-head">
+              <span class="exp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg></span>
+              <div class="exp-head-text">
+                <h3>Lomba 17</h3>
+                <span class="exp-meta">Kegiatan Lomba</span>
+              </div>
+              <span class="exp-badge">Kepanitiaan</span>
+            </div>
+            <p>Mengikuti bagian dari kepanitiaan kegiatan lomba 17 dan membantu koordinasi kegiatan.</p>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-card-head">
+              <span class="exp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+              <div class="exp-head-text">
+                <h3>Classmeeting</h3>
+                <span class="exp-meta">Kegiatan Sekolah</span>
+              </div>
+              <span class="exp-badge">Kepanitiaan</span>
+            </div>
+            <p>Berparticipasi dalam kepanitiaan kegiatan Classmeeting sekolah.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="tools">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">&#128296;&#65039; Tools I Use</span>
+          <h2 class="section-title">My <span class="accent">Toolkit</span></h2>
+        </div>
+
+        <div class="soft-grid tools-grid">
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/><polyline points="19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>Figma</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>Canva</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>Visual Studio Code</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A3.37 3.37 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C5.07.65 3 1 3 1a5.07 5.07 0 0 0-1 3.77 5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 1 6 18.13V22"/></svg></span>GitHub</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>Adobe Illustrator</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>Google Workspace</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>Microsoft Office</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><rect x="9" y="3" width="6" height="6"/><rect x="9" y="15" width="6" height="6"/></svg></span>Google Spreadsheet</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="interests">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">&#128161; Interests</span>
+          <h2 class="section-title">Things I <span class="accent">Love</span></h2>
+        </div>
+
+        <div class="soft-grid interests-grid">
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>Web Development</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>UI/UX Design</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>Graphic Design</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>Technology</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z"/></svg></span>Business &amp; Product Design</div>
+          <div class="soft-chip reveal"><span class="soft-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>Digital Projects</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">&#128248; Gallery</span>
+          <h2 class="section-title">My <span class="accent">Gallery</span></h2>
+          <p class="section-sub">Kumpulan dokumentasi yang akan dilengkapi secara bertahap.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal" data-gallery-slot="project-documentation">
+            <div class="gallery-placeholder" aria-label="Placeholder dokumentasi project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Placeholder</span>
+            </div>
+            <figcaption>Dokumentasi project</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-gallery-slot="school-activity">
+            <div class="gallery-placeholder" aria-label="Placeholder kegiatan sekolah">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+              <span>Placeholder</span>
+            </div>
+            <figcaption>Kegiatan sekolah</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-gallery-slot="organization-activity">
+            <div class="gallery-placeholder" aria-label="Placeholder kegiatan organisasi">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span>Placeholder</span>
+            </div>
+            <figcaption>Kegiatan organisasi</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-gallery-slot="art-design">
+            <div class="gallery-placeholder" aria-label="Placeholder Art and Design">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              <span>Placeholder</span>
+            </div>
+            <figcaption>Art &amp; Design</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-gallery-slot="committee-event">
+            <div class="gallery-placeholder" aria-label="Placeholder kegiatan kepanitiaan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Placeholder</span>
+            </div>
+            <figcaption>Kegiatan kepanitiaan</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">&#128172; Testimonials</span>
+          <h2 class="section-title">Kind <span class="accent">Words</span></h2>
+          <p class="section-sub">Testimoni akan ditambahkan setelah tersedia.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal" data-testimonial-slot="1">
+            <span class="testimonial-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 3-1 5-4 5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 3-1 5-4 5"/></svg></span>
+            <p>&ldquo;Testimonial akan ditambahkan.&rdquo;</p>
+            <span class="testimonial-status">Placeholder testimonial</span>
+          </article>
         </div>
       </div>
     </section>
